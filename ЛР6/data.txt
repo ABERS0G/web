@@ -1,0 +1,1 @@
+[{"title":"Титле1","text":"Тексте1","pos":"right-center"},{"title":"Заголовок111","text":" 1111text text text text text text text text text","pos":"top left"}]

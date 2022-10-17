@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+table{
+    width: 100%;
+    height: 100vh;
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    transition: transform .3s;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h1{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 10vh;
+    text-align: center;
+}
+img{
+    width:300px;
+    margin: auto;
+}
+
+.logo-name{
+    display: inline-block;
+    line-height: 15vh;
+}
+.text-head-footer{
+    float: right;
+    line-height: 15vh;
+}
+.border-punkt-menu{
+    --angle: 45deg;
+    width: 80%;
+    background: linear-gradient(var(--angle), #ea5aff, #ac8fff, #46cefe) border-box;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 10px auto;
+}
+@keyframes spin {
+    from {
+        --angle: 45deg;
+    }
+    to {
+        --angle: 405deg;
+    }
+}
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 45deg;
+    inherits: false;
+}
+.border-punkt-menu:hover{
+    animation: 1s spin ease;
+}
+.border-punkt-menu:hover p{
+    transform: scale(1.1);
+}
+
+.punkt-menu{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.active-punkt{
+    box-shadow: lightskyblue 0 0 20px 3px;
+}

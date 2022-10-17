@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+    text-decoration: none;
+    color: black;
+}
+p{
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s;
+}
+h1{
+    font-size: 22px;
+}
+h2{
+    font-size: 22px;
+    white-space: nowrap;
+    font-weight: normal;
+}
+h3, h4{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 300px;
+}
+input{
+
+}
+
+.container{
+    display: grid;
+    height: 100%;
+    margin: 0px 5px 0 5px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 1fr 6fr 1fr 2fr;
+    grid-template-areas:
+            "header header  header"
+            "l-menu t-menu t-menu"
+            "l-menu main r-menu"
+            "l-menu b-menu r-menu"
+            "footer footer footer";
+    font-size: 20px;
+}
+
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c6d9f1;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.logo-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 30px;
+    margin-right: 5px;
+}
+
+.text-head-footer{
+    width: 100%;
+    text-align: right;
+}
+
+.border-punkt-menu{
+    flex-shrink: 1;
+    --angle: 45deg;
+    width: 100%;
+    background: linear-gradient(var(--angle), #ea5aff, #ac8fff, #46cefe) border-box;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 5px;
+}
+@keyframes spin {
+    from {
+        --angle: 45deg;
+    }
+    to {
+        --angle: 405deg;
+    }
+}
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 45deg;
+    inherits: false;
+}
+.img-site-map{
+    border: #46cefe solid 1px;
+    transition: border 1s;
+}
+
+
+.border-punkt-menu:hover{
+    animation: 1s spin ease;
+}
+.border-punkt-menu:hover p{
+    transform: scale(1.1);
+}
+
+.punkt-menu{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.active-punkt{
+    box-shadow: lightskyblue 0 0 20px 3px;
+}
+
+/*Мобил меню*/
+
+.mobile-menu{
+    display: none;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top:0;
+}
+
+.hamburger {
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    width: 40px;
+    margin: 5px;
+    z-index: 2;
+    opacity: 1;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    margin-block: 10px;
+    border-radius: 4px;
+    transition: transform .5s, opacity .2s;
+}
+
+.active .line:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+    transition: .5s;
+    background-color: black;
+}
+
+.active .line:nth-child(2) {
+    opacity: 0;
+    background-color: black;
+}
+
+.active .line:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+    transition: .5s;
+    background-color: black;
+}
+
+
+.dev-menu{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    right: 20px;
+    bottom: 20px;
+    align-items: center;
+}
+#dev-instrument{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    top:0;
+    align-items: center;
+    padding: 0 10px;
+    transition: left 0.5s;
+}
+.instrument{
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 0 5px;
+    background-color: #F0F8FF;
+    cursor: pointer;
+}
+#dev-show{
+    position: absolute;
+    top:0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+#submit-number{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 876px){
+    .container{
+        display: block;
+        margin: 50px 5px 0 5px;
+    }
+    .menu{
+        display: none;
+    }
+    .low-main{
+        display: flex;
+    }
+    .low-main-el{
+        flex: 1;
+    }
+    .low-main-img{
+        width: 100%;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}

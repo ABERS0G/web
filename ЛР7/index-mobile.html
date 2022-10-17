@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-canvas.css">
+    <link rel="stylesheet" href="style-css.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="mobile-menu">
+    <div class="hamburger" id="button">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div id="hamburger-menu" style="display: none; justify-content: center; align-items: center; height: 100%">
+        <div style="display: flex; flex-direction: column; width: 60%">
+            <a href="index-mobile.html"><div class="border-punkt-menu active-punkt"><div style="padding: 15px" class="punkt-menu"><p>Головна</p></div></div></a>
+            <a href="index-mobile.html"><div class="border-punkt-menu"><div style="padding: 15px" class="punkt-menu"><p>Управління</p></div></div></a>
+            <a href="index-mobile.html"><div class="border-punkt-menu"><div style="padding: 15px" class="punkt-menu"><p>Контакти</p></div></div></a>
+            <a href="index-mobile.html"><div class="border-punkt-menu"><div style="padding: 15px" class="punkt-menu"><p>Про нас</p></div></div></a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="block" style="grid-area: header; justify-content: end">
+        <div class="logo-name"><h1>CoolShop</h1></div><p class="text-head-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="block menu" style="grid-area: l-menu; background-color: #fde9d9; flex-direction: column">
+        <div style="display: flex; flex-direction: column">
+            <a href="index-mobile.html"><div class="border-punkt-menu active-punkt"><div class="punkt-menu"><p>Головна</p></div></div></a>
+            <a href="index-mobile.html"><div class="border-punkt-menu"><div class="punkt-menu"><p>Каталог</p></div></div></a>
+            <a href="index-mobile.html"><div class="border-punkt-menu"><div class="punkt-menu"><p>Контакти</p></div></div></a>
+            <a href="index-mobile.html"><div class="border-punkt-menu"><div class="punkt-menu"><p>Про нас</p></div></div></a>
+        </div>
+    </div>
+    <div class="block" style="grid-area: t-menu; background-color: #eaf1dd"><h3>Цікава стаття на Головній</h3></div>
+    <div class="block" style="grid-area: main; flex-direction: column">
+        <div id="start-button">
+            Start Canvas
+        </div>
+        <div id="start-button-css">
+            Start CSS
+        </div>
+        <p id="show-log"></p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae sem sodales lacus eleifend elementum a et risus. Duis cursus ultricies sodales. Suspendisse quis metus eu est viverra molestie ut eu lacus. Vivamus molestie metus vitae ante aliquet elementum. Nulla tristique dignissim purus. Proin metus massa, feugiat et urna pharetra, tincidunt consectetur tellus. Maecenas imperdiet a elit non elementum. Donec congue lorem vitae semper hendrerit.
+        </p></div>
+    <div class="block" style="grid-area: r-menu; background-color: #fde9d9; flex-direction: column">
+        <p style="margin-bottom: 10px; font-size: 25px; font-weight: 600">Навігація</p>
+        <img src="images/img1.jpg" alt="site-map" usemap="#site-map">
+        <map name="site-map">
+            <area shape="rect" coords="20, 20, 130, 130" href="index-mobile.html" alt="1">
+            <area shape="rect" coords="20, 170, 130, 280" href="index-mobile.html" alt="2">
+            <area shape="rect" coords="170, 20, 280, 130" href="index-mobile.html" alt="3">
+            <area shape="rect" coords="170, 170, 280, 280" href="index-mobile.html" alt="4">
+        </map>
+    </div>
+    <div class="block low-main" style="grid-area: b-menu; justify-content: start; background-color: #eaf1dd">
+        <div class="low-main-el" style="height: 100%; margin-right: 10px"><img class="low-main-img" src="images/more.jpg" alt="more" style="object-fit: cover;"></div>
+        <p class="low-main-el">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+            <div class="block" style="grid-area: footer">
+                <p class="text-head-footer" style="text-align: start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="logo-name"><h2>CoolShop is cool</h2></div>
+            </div>
+</div>
+
+<div class="canvas-container">
+    <div>
+        <div class="controls">
+            <div style="flex: 1; border-right: 1px solid black; display: flex; justify-content: center; align-items: center">
+                <p id="log"></p>
+            </div>
+            <div style="flex: 1; display: flex; justify-content: center; align-items: center">
+                <div id="exit-button" class="exit-button" style="margin-right: 10px">
+                    Exit
+                </div>
+                <div id="reload-button" class="exit-button" style="background-color: grey; opacity: 0.7">
+                    Reload
+                </div>
+            </div>
+        </div>
+        <canvas id="myCanvas" height="500px" width="1000px"></canvas>
+    </div>
+</div>
+
+<div class="work-container">
+    <div>
+        <div class="controls">
+            <div style="flex: 1; border-right: 1px solid black; display: flex; justify-content: center; align-items: center">
+                <p id="log_css"></p>
+            </div>
+            <div style="flex: 1; display: flex; justify-content: center; align-items: center">
+                <div id="exit-button-css" class="exit-button" style="margin-right: 10px">
+                    Exit
+                </div>
+                <div id="reload-button-css" class="exit-button" style="background-color: grey; opacity: 0.7">
+                    Reload
+                </div>
+            </div>
+        </div>
+        <div id="work-area" style="position: relative">
+            <div id="ball1" style="width: 20px; height: 20px; border-radius: 50px; background-color: #46cefe; position: absolute"></div>
+            <div id="ball2" style="width: 20px; height: 20px; border-radius: 50px; background-color: orange; position: absolute"></div>
+        </div>
+    </div>
+</div>
+
+<script src="script-canvas.js"></script>
+<script src="script-css.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

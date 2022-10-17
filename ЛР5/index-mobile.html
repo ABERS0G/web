@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="dev-menu">
+    <img src="https://cdn-icons-png.flaticon.com/512/5969/5969113.png" style="height: 100%; width: 100%" alt="">
+    <div id="dev-show">
+        <div id="dev-instrument">
+            <div id="func1" class="instrument">
+                <p style="white-space: nowrap;">Функція 1</p>
+            </div>
+            <div id="func2" class="instrument">
+                <p style="white-space: nowrap">Функція 2</p>
+            </div>
+            <div id="func3" class="instrument">
+                <p style="white-space: nowrap">Колір</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobile-menu">
+    <div class="hamburger" id="button">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div id="hamburger-menu" style="display: none; justify-content: center; align-items: center; height: 100%">
+        <div style="display: flex; flex-direction: column; width: 60%">
+            <a href="index-mobile.html"><div class="border-punkt-menu active-punkt"><div style="padding: 15px" class="punkt-menu"><p>Головна</p></div></div></a>
+            <a href="index-mobile.html"><div class="border-punkt-menu"><div style="padding: 15px" class="punkt-menu"><p>Каталог</p></div></div></a>
+            <a href="index-mobile.html"><div class="border-punkt-menu"><div style="padding: 15px" class="punkt-menu"><p>Контакти</p></div></div></a>
+            <a href="index-mobile.html"><div class="border-punkt-menu"><div style="padding: 15px" class="punkt-menu"><p>Про нас</p></div></div></a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="block" style="grid-area: header; justify-content: end">
+        <div class="logo-name"><h1>CoolShop</h1></div><p class="text-head-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div id="b2" class="block menu" style="grid-area: l-menu; background-color: #fde9d9; flex-direction: column">
+        <div style="display: flex; flex-direction: column">
+            <a href="index-mobile.html"><div class="border-punkt-menu active-punkt"><div class="punkt-menu"><p>Головна</p></div></div></a>
+            <a href="index-mobile.html"><div class="border-punkt-menu"><div class="punkt-menu"><p>Каталог</p></div></div></a>
+            <a href="index-mobile.html"><div class="border-punkt-menu"><div class="punkt-menu"><p>Контакти</p></div></div></a>
+            <a href="index-mobile.html"><div class="border-punkt-menu"><div class="punkt-menu"><p>Про нас</p></div></div></a>
+        </div>
+    </div>
+    <div class="block" style="grid-area: t-menu; background-color: #eaf1dd"><h3>Цікава стаття на Головній</h3></div>
+    <div id="b4" class="block" style="grid-area: main; flex-direction: column">
+        <div style="display: flex; align-items: center">
+            <p style="margin-right: 5px">Введіть число:</p>
+            <label style="margin-right: 5px">
+                <input id="input-number">
+            </label>
+            <div id="submit-number">
+                <p>Підтвердити</p>
+            </div>
+        </div>
+        <p id="X-button" style="cursor: pointer; text-align: center; padding: 5px 20px; border: 1px solid black; background-color: #eaf1dd; margin: 5px">X</p>
+
+        <div id="form5" style="display: block">
+            <p>Введіть назву тега:</p>
+            <label for="input-tag">
+                <input id="input-tag">
+            </label>
+            <p>Введіть стилі:</p>
+            <label for="input-tag-style">
+                <input id="input-tag-style">
+            </label>
+            <div style="display: flex; width: 100%; justify-content: stretch">
+                <p id="save-button" style="flex:1; text-align: center; padding: 5px 20px; border: 1px solid black; background-color: #eaf1dd; margin: 5px 5px 5px 0">1</p>
+                <p id="delete-button" style="flex:1; text-align: center; padding: 5px 20px; border: 1px solid black; background-color: #eaf1dd; margin: 5px 0 5px 5px">2</p>
+            </div>
+        </div>
+
+        <h4 style="align-self: start">List</h4>
+        <ul style="align-self: start">
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Ipsum</li>
+            <li>Dolor</li>
+        </ul>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae sem sodales lacus eleifend elementum a et risus. Duis cursus ultricies sodales. Suspendisse quis metus eu est viverra molestie ut eu lacus. Vivamus molestie metus vitae ante aliquet elementum. Nulla tristique dignissim purus. Proin metus massa, feugiat et urna pharetra, tincidunt consectetur tellus. Maecenas imperdiet a elit non elementum. Donec congue lorem vitae semper hendrerit.
+        </p>
+        <p id="result-in4"></p>
+    </div>
+    <div id="b5" class="block" style="grid-area: r-menu; background-color: #fde9d9; flex-direction: column">
+        <p style="margin-bottom: 10px; font-size: 25px; font-weight: 600">Навігація</p>
+        <img src="images/img1.jpg" alt="site-map" usemap="#site-map">
+        <map name="site-map">
+            <area shape="rect" coords="20, 20, 130, 130" href="index-mobile.html" alt="1">
+            <area shape="rect" coords="20, 170, 130, 280" href="index-mobile.html" alt="2">
+            <area shape="rect" coords="170, 20, 280, 130" href="index-mobile.html" alt="3">
+            <area shape="rect" coords="170, 170, 280, 280" href="index-mobile.html" alt="4">
+        </map>
+    </div>
+    <div class="block low-main" style="grid-area: b-menu; justify-content: start; background-color: #eaf1dd">
+        <div class="low-main-el" style="height: 100%; margin-right: 10px"><img class="low-main-img" src="images/more.jpg" alt="more" style="object-fit: cover;"></div>
+        <p class="low-main-el">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+            <div class="block" style="grid-area: footer">
+                <p class="text-head-footer" style="text-align: start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="logo-name"><h2>CoolShop is cool</h2></div>
+            </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

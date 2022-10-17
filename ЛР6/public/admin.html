@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="modal">
+    <div class="modal-form">
+        <p>Заголовок елемента</p>
+        <label for="modal-input-title">
+            <input id="modal-input-title">
+        </label>
+        <p>Текст елемента</p>
+        <label for="modal-input-text">
+            <textarea id="modal-input-text"></textarea>
+        </label>
+        <button style="margin-bottom: 5px" id="modal-submit-form">Підтвердити</button>
+        <button id="modal-cancel-form">Закрити</button>
+    </div>
+</div>
+<div class="mobile-menu">
+    <div class="hamburger" id="button">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div id="hamburger-menu" style="display: none; justify-content: center; align-items: center; height: 100%">
+        <div style="display: flex; flex-direction: column; width: 60%">
+            <a href="/"><div class="border-punkt-menu active-punkt"><div style="padding: 15px" class="punkt-menu"><p>Головна</p></div></div></a>
+            <a href="/admin"><div class="border-punkt-menu"><div style="padding: 15px" class="punkt-menu"><p>Управління</p></div></div></a>
+            <a href="/"><div class="border-punkt-menu"><div style="padding: 15px" class="punkt-menu"><p>Контакти</p></div></div></a>
+            <a href="/"><div class="border-punkt-menu"><div style="padding: 15px" class="punkt-menu"><p>Про нас</p></div></div></a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="block" style="grid-area: header; justify-content: end">
+        <div class="logo-name"><h1>CoolShop</h1></div><p class="text-head-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="block menu" style="grid-area: l-menu; background-color: #fde9d9; flex-direction: column">
+        <div style="display: flex; flex-direction: column">
+            <a href="/"><div class="border-punkt-menu active-punkt"><div class="punkt-menu"><p>Головна</p></div></div></a>
+            <a href="/admin"><div class="border-punkt-menu"><div class="punkt-menu"><p>Управління</p></div></div></a>
+            <a href="/"><div class="border-punkt-menu"><div class="punkt-menu"><p>Контакти</p></div></div></a>
+            <a href="/"><div class="border-punkt-menu"><div class="punkt-menu"><p>Про нас</p></div></div></a>
+        </div>
+    </div>
+    <div class="block" style="grid-area: t-menu; background-color: #eaf1dd"><h3>Цікава стаття на Головній</h3></div>
+    <div class="block" style="grid-area: main; flex-direction: column">
+
+        <div id="add-box-show" style="cursor: pointer; border-radius: 5px; margin: 5px 0; background-color: black; color: white; font-weight: 600; padding: 5px">Додати елемент</div>
+
+        <div class="add-box">
+            <p>Заголовок елемента</p>
+            <label for="input-title">
+                <input id="input-title">
+            </label>
+            <p>Текст елемента</p>
+            <label for="input-text">
+                <textarea id="input-text"></textarea>
+            </label>
+            <p>Позиція</p>
+            <label for="input-pos">
+                <input id="input-pos">
+            </label>
+            <button id="submit-form">Підтвердити</button>
+        </div>
+        <div id="show-list" style="cursor: pointer; border-radius: 5px; margin: 5px 0; background-color: black; color: white; font-weight: 600; padding: 5px">Показати список</div>
+        <div class="content-container"></div>
+
+    </div>
+    <div class="block" style="grid-area: r-menu; background-color: #fde9d9; flex-direction: column">
+        <p style="margin-bottom: 10px; font-size: 25px; font-weight: 600">Навігація</p>
+        <img src="images/img1.jpg" alt="site-map" usemap="#site-map">
+        <map name="site-map">
+            <area shape="rect" coords="20, 20, 130, 130" href="/" alt="1">
+            <area shape="rect" coords="20, 170, 130, 280" href="/admin" alt="2">
+            <area shape="rect" coords="170, 20, 280, 130" href="/" alt="3">
+            <area shape="rect" coords="170, 170, 280, 280" href="/" alt="4">
+        </map>
+    </div>
+    <div class="block low-main" style="grid-area: b-menu; justify-content: start; background-color: #eaf1dd">
+        <div class="low-main-el" style="height: 100%; margin-right: 10px"><img class="low-main-img" src="images/more.jpg" alt="more" style="object-fit: cover;"></div>
+        <p class="low-main-el">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+            <div class="block" style="grid-area: footer">
+                <p class="text-head-footer" style="text-align: start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="logo-name"><h2>CoolShop is cool</h2></div>
+            </div>
+</div>
+<script src="script_admin.js"></script>
+</body>
+</html>
